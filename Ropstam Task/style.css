@@ -1,0 +1,71 @@
+@font-face {
+    font-family: gilroy-bold;
+    src: url(./font/Gilroy-FREE/Gilroy-ExtraBold.otf);
+}
+@font-face {
+    font-family: golroy-light;
+    src: url(./font/Gilroy-FREE/Gilroy-Light.otf);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#Landing-main{
+    background-image: url(./Assets/bg-main.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bars{
+    font-size:40px;
+    color: white;
+}
+#club-sec{
+    background-image: url(./Assets/777\ Club\ bg-main2.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sneak-sec{
+    background-image: url(./Assets/sneak.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#roadmap{
+    background-image: url(./Assets/Road-map.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#foundingteam{
+    background-image: url(./Assets/founding.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#faqs{
+    background-image: url(./Assets/faqs.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.active{
+    border-radius: 999px;
+    background-image: linear-gradient(to right, #E600FF , #2E2CF3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+.active{
+    width: 120px;
+    height:30px;
+}
+}
+@media (min-width: 1024px){
+    .active{
+        width: 150px;
+        height:35px;
+    }
+    }

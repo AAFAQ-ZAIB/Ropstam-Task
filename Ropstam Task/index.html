@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/b713357689.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>777 Clubhouse</title>
+</head>
+<body>
+    <!-- Landing main section starts from here -->
+    <section id="Landing-main" class="w-full flex justify-center pb-[50px]">
+        <div class="flex-col">
+            <!-- Header section starts from here -->
+            <div class="header-main w-full flex justify-center">
+                <div class="md:w-[95%] w-[85%]">
+                    <div class="flex justify-between mt-10 md:items-center">
+                        <div>
+                            <img src="./Assets/logo.png" class="w-[55px] h-[65px] md:w-[75px] 2xl:w-[100px] 2xl:h-[110px] md:h-[85px]">
+                        </div>
+                        <!-- Tablet and Desktop menu bar -->
+                        <div id="myDIV" class="hidden md:block md:w-[82%] lg:w-[75%] 2xl:w-[60%]">
+                            <ul class="flex justify-between items-center">
+                                <li class="btn font-gilroy-light md:text-sm lg:text-base 2xl:text-xl text-[#ffffff] opacity-100"><a href="#">HOME</a></li>
+                                <li class="btn font-gilroy-light md:text-sm lg:text-base 2xl:text-xl text-[#ffffff] opacity-100"><a href="#">ABOUT US</a></li>
+                                <li class="btn font-gilroy-light md:text-sm lg:text-base 2xl:text-xl text-[#ffffff] opacity-100"><a href="#">ROAD MAP</a></li>
+                                <li class="btn font-gilroy-light md:text-sm lg:text-base 2xl:text-xl text-[#ffffff] opacity-100"><a href="#">TEAM</a></li>
+                                <li class="btn font-gilroy-light md:text-sm lg:text-base 2xl:text-xl text-[#ffffff] opacity-100"><a href="#">WALLET COLLECT</a></li>
+                                <li class="btn font-gilroy-light md:text-sm lg:text-base 2xl:text-xl text-[#ffffff] opacity-100"><a href="#">MINTING</a></li>
+                                <li class="btn active font-gilroy-light md:text-sm lg:text-base 2xl:text-xl text-[#ffffff] opacity-100"><a href="#">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                        <!-- Tablet and Desktop menu bar ends here -->
+
+                        <!-- Mobile toggle menu bar -->
+                        <div id="toggleBtn" onClick="mobileMenu()" class="flex justify-center items-center md:hidden">
+                            <i id="bars" class="fa fa-bars" aria-hidden="true"></i>
+                        </div>
+                        <div id="mobMenu" class="hidden absolute bg-[#2E2CF3] right-0 w-full top-[115px] h-[275px]">
+                            <div class="py-4 px-4">
+                                <ul class="flex flex-col font-gilroy font-bold text-lg text-[#ffffff] opacity-100 leading-10">
+                                    <li><a href="#">HOME</a></li>
+                                    <li><a href="#">ABOUT US</a></li>
+                                    <li><a href="#">ROAD MAP</a></li>
+                                    <li><a href="#">TEAM</a></li>
+                                    <li><a href="#">WALLET COLLECT</a></li>
+                                    <li><a href="#">MINTING</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Mobile toggle menu bar ends here -->
+                    </div>
+                </div>
+            </div>
+            <!-- Header sections ends here -->
+
+            <!-- Front section starts from here -->
+            <div class="flex justify-center md:mt-8">
+                <div class="md:w-[95%] w-[85%] flex md:justify-between md:flex-row flex-col md:items-start items-center">
+                    <div class="md:w-[30%] mt-8 md:mt-12 flex flex-col md:items-start items-center">
+                        <h1 class="font-gilroy-bold text-[28px] lg:text-[50px] md:text-[44px] text-white font-extrabold md:text-left text-center">777 Clubhouse <md:br> Founders <md:br> Collection</h1>
+                        <p class="font-gilroy-light lg:text-[30px] text-[24px] text-white font-light md:mt-8 md:text-left text-center">Elevate your lifestyle</p>
+                        <button class="bg-gradient-to-r from-[#E600FF] to-[#2E2CF3] rounded-full w-[175px] h-[40px] md:w-[175px] md:h-[50px] text-white font-gilroy text-md font-medium md:mt-10 mt-4">CONNECT WALLET</button>
+                    </div>
+                    <div class="w-[60.8865710561%] md:w-[467px] lg:w-[557px] flex flex-wrap justify-between mt-8 md:mt-0">
+                        <div class="lg:w-[175px] lg:h-[175px] md:w-[145px] md:h-[145px] w-[31.0492505353%]">
+                            <img src="./Assets/1.png">
+                        </div>
+                        <div class="lg:w-[175px] lg:h-[175px] md:w-[145px] md:h-[145px] w-[31.0492505353%] md:mt-4">
+                            <img src="./Assets/2.png" class="md:mt-6 mt-4">
+                        </div>
+                        <div class="lg:w-[175px] lg;h-[175px] md:w-[145px] md:h-[145px] w-[31.0492505353%]">
+                            <img src="./Assets/3.png">
+                        </div>
+                        <div class="lg:w-[175px] lg:h-[175px] md:w-[145px] md:h-[145px] w-[31.0492505353%]">
+                            <img src="./Assets/4.png">
+                        </div>
+                        <div class="lg:w-[175px] lg:h-[175px] md:w-[145px] md:h-[145px] w-[31.0492505353%] md:mt-4">
+                            <img src="./Assets/5.png" class="md:mt-6 mt-4">
+                        </div>
+                        <div class="lg:w-[175px] lg:h-[175px] md:w-[145px] md:h-[145px] w-[31.0492505353%]">
+                            <img src="./Assets/6.png">
+                        </div>
+                        <div class="lg:w-[175px] lg:h-[175px] md:w-[145px] md:h-[145px] w-[31.0492505353%]">
+                            <img src="./Assets/7.png">
+                        </div>
+                        <div class="lg:w-[175px] lg:h-[175px] md:w-[145px] md:h-[145px] w-[31.0492505353%] md:mt-4">
+                            <img src="./Assets/1.png" class="md:mt-6 mt-4">
+                        </div>
+                        <div class="lg:w-[175px] lg:h-[175px] md:w-[145px] md:h-[145px] w-[31.0492505353%]">
+                            <img src="./Assets/2.png">
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </section>
+    <!-- Front section ends here -->
+
+    <!-- Landing main section starts from here -->  
+    
+    <!-- 777 Club section starts from here -->
+    <section id="club-sec" class="flex justify-center">
+        <div class="flex justify-center">
+            <div class="md:w-[95%] w-[85%] py-[40px] lg:py-[120px] flex lg:justify-between justify-center">
+                <div class="flex flex-col lg:flex-row lg:w-[90.5%] xl:w-[1281.55px] lg:justify-between items-center">
+                    <div class="relative lg:justify-start justify-center lg:w-[54.03413975193418%]">
+                        <img class="absolute flex justify-center items-center top-[34%] right-[40%] w-[58px] h-[56px] md:w-[70px] md:h-[68px] lg:w-[90px] lg:h-[88px]" src="./Assets/passes-icon.png">
+                        <img src="./Assets/777-passes.png">
+                    </div>
+                    <div class="lg:w-[40.96419361063841%] w-[65%] flex lg:justify-start flex-col items-center mt-6 lg:mt-0">
+                        <h1 class="font-gilroy-bold text-[24px] lg:text-[38px] text-[30px] text-white font-bold lg:text-left text-center">The 777 Club</h1>
+                        <p class="text-center lg:text-left font-gilroy-light text-base text-white leading-8 font-light mt-7">
+                            We are the 777Club, a global collective of like-minded individuals with a DeFi 
+                            lifestyle who appreciate access to the finest things in life. We have a lot planned. 
+                            The wildest events, real-world benefits like none-other, a metaverse social club, 
+                            connections to new business opportunities, and a ton more. <br>
+                        </p>
+                        <p class="text-center lg:text-left font-gilroy-light text-base text-white leading-8 font-light mt-7"> 
+                            Our NFT collection is a launchpad to the best things in life and we want to give you the chance to 
+                            share it with us. Getting in early on the 777Club will give you more benefits, more utility, and more 
+                            opportunities to enhance your lifestyle.
+                        </p> 
+                        <button class="bg-gradient-to-r from-[#E600FF] to-[#2E2CF3] rounded-full w-[175px] h-[40px] md:w-[175px] md:h-[50px] text-white font-gilroy text-md font-medium md:mt-10 mt-4">CONNECT WALLET</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 777 Club section ends here -->
+
+    <!-- Sneak peak section starts from here -->
+    <section id="sneak-sec" class="flex flex-col justify-center py-12">
+        <div class="pb-12">
+            <h1 class="font-gilroy-bold text-[24px] lg:text-[38px] text-[30px] text-white font-bold text-center">Sneak Peak</h1>
+        </div>
+        <div class="w-full flex justify-center">
+            <div class="flex justify-center">
+            <div class="md:w-[95%] w-[85%] 2xl:w-[1281.55px] flex flex-wrap justify-between">
+                <div class="w-[15.60610198587648%] 2xl:w-[200px]">
+                    <img src="./Assets/1.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px] mt-4">
+                    <img src="./Assets/2.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px]">
+                    <img src="./Assets/3.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px]">
+                    <img src="./Assets/4.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px] mt-4">
+                    <img src="./Assets/5.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px]">
+                    <img src="./Assets/6.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px]">
+                    <img src="./Assets/7.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px] mt-4">
+                    <img src="./Assets/1.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px]">
+                    <img src="./Assets/2.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px]">
+                    <img src="./Assets/3.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px] mt-4">
+                    <img src="./Assets/4.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px]">
+                    <img src="./Assets/5.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px]">
+                    <img src="./Assets/6.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px] mt-4">
+                    <img src="./Assets/7.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px]">
+                    <img src="./Assets/1.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px]">
+                    <img src="./Assets/2.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px] mt-4">
+                    <img src="./Assets/3.png">
+                </div>
+                <div class="w-[15.60610198587648%] 2xl:w-[200px]">
+                    <img src="./Assets/4.png">
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sneak peak section ends here -->
+
+    <!-- Road map section starts from here -->
+    <section id="roadmap" class="w-full pt-[48px] pb-[100px] mb-[-2px]">
+        <div class="flex justify-center">
+            <div class="md:w-[95%] w-[85%] 2xl:w-[1281.55px] flex justify-center flex-col items-center">
+                <div class="relative">
+                    <p class="absolute top-[40%] left-[15%] font-gilroy-bold text-xl text-white font-bold">ROAD MAP</p>
+                    <img class="w-[145px] h-[150px]" src="./Assets/roadmap01.png">
+                </div>
+                <div class="relative w-full flex flex-col justify-center items-center">
+                    <img src="./Assets/Rectangle 66.png">
+                    <div class="hidden md:block absolute border-2 md:border-4 w-[10%] border-[#FE9700] left-[37%] top-[14%]">
+                    </div>
+                    <div class="absolute bg-[#7153D9] w-[90%] md:w-[25%] lg:w-[22%] border-2 md:border-4 rounded-2xl border-[#FE9700] left-[5%] md:left-[15%] top-[8%] sm:top-[20%] md:top-[6%]">
+                        <p class="px-2 py-2 text-xs font-gilroy font-light text-white">
+                            The 777 Club lifestyle is fast-paced and actively seeks the best things in life. 
+                            The first stage of our club is establishing a strong community based on the 
+                            Clubhouse Founders Collection of 777 member passes. It’s how we live, and we 
+                            want to share it with you. <br>
+                            Throughout late Q1, we will be focused on building our 
+                            community and personally connecting with our followers, collaborating with other 
+                            NFT projects, and creating meaningful partnerships.
+                        </p>
+                    </div>
+                    <div class="hidden md:block absolute border-2 md:border-4 w-[10%] border-[#25C5D9] right-[37%] top-[34%]">
+                    </div>
+                    <div class="absolute bg-[#4526B1] w-[90%] md:w-[25%] lg:w-[22%] border-2 md:border-4 rounded-2xl border-[#25C5D9] right-[5%] md:right-[15%] top-[33%] sm:top-[41%] md:top-[28%]">
+                        <p class="px-2 py-2 text-xs font-gilroy font-light text-white">
+                            In early Q2, we will mint! We will sell the Clubhouse Collection to our founding members,
+                             who will reap extra rewards. Soon after, we will launch the concierge service, including
+                              a social networking aspect, and deliver our 777 Clubhouse welcome packages to your 
+                              door. We will sell the Clubhouse Collection to our founding members, who will reap 
+                              extra rewards.
+                        </p>
+                    </div>
+                    <div class="hidden md:block absolute border-2 md:border-4 w-[10%] border-[#42A4F5] left-[37%] top-[54%]">
+                    </div>
+                    <div class="absolute bg-[#4526B1] w-[90%] md:w-[25%] lg:w-[22%] border-2 md:border-4 rounded-2xl border-[#42A4F5] left-[5%] md:left-[15%] top-[56%] sm:top-[62%] md:top-[50%]">
+                        <p class="px-2 py-2 text-xs font-gilroy font-light text-white">
+                            In April, we will purchase a plot of prime meta-estate to launch our metaverse social club. A spot 
+                            where NFT holders can meet, display their NFT collections, and help monetize the space for more rewards.
+                        </p>
+                    </div>
+                    <div class="hidden md:block absolute border-2 md:border-4 w-[10%] border-[#EB407A] right-[37%] top-[74%]">
+                    </div>
+                    <div class="absolute bg-[#4526B1] w-[90%] md:w-[25%] lg:w-[22%] border-2 md:border-4 rounded-2xl border-[#EB407A] right-[5%] md:right-[15%] top-[73%] sm:top-[81.5%] md:top-[70%]">
+                        <p class="px-2 py-2 text-xs font-gilroy font-light text-white">
+                            We will begin a merch collab with a top-tier design label in May while distributing the 
+                            777 Club Friends Airdrop. This will take us to our next in-person event, to be announced 
+                            shortly after the sale.
+                        </p>
+                    </div>
+                    <div class="hidden md:block absolute border-2 md:border-4 w-[10%] border-[#673BB6] left-[37%] top-[96%]">
+                    </div>
+                    <div class="absolute bg-[#7153D9] w-[90%] md:w-[25%] lg:w-[22%] border-2 md:border-4 rounded-2xl border-[#673BB6] left-[5%] md:left-[15%] top-[94%] sm:top-[100%] md:top-[91%]">
+                        <p class="px-2 py-2 text-xs font-gilroy font-light text-white">
+                            In Q3, we are headed to Mykonos because that’s what one does in the summer. That will be followed 
+                            by the casual stop in Ibiza before wrapping things up for the fall/winter schedule. Get ready for 
+                            some exciting events + member meet-ups across Europe this summer.
+                        </p>
+                    </div>
+                    <div class="hidden sm:block absolute top-[10%]">
+                        <img class="w-[95px] h-[100px]" src="./Assets/roadmapsub.png">
+                        <p class="absolute top-[30%] font-gilroy-bold text-sm text-center text-white font-bold">Launch Initiated</p>
+                    </div>
+                    <div class="hidden sm:block absolute top-[30%]">
+                        <img class="w-[95px] h-[100px]" src="./Assets/roadmapsub.png">
+                        <p class="absolute top-[40%] left-[25%] font-gilroy-bold text-sm text-center text-white font-bold">Staking</p>
+                    </div>
+                    <div class="hidden sm:block absolute top-[50%]">
+                        <img class="w-[95px] h-[100px]" src="./Assets/roadmapsub.png">
+                        <p class="absolute top-[35%] font-gilroy-bold text-xs text-center text-white font-bold">Merch & Live Events</p>
+                    </div>
+                    <div class="hidden sm:block absolute top-[70%]">
+                        <img class="w-[95px] h-[100px]" src="./Assets/roadmapsub.png">
+                        <p class="absolute top-[35%] font-gilroy-bold text-xs text-center text-white font-bold">The Crypto Bears</p>
+                    </div>
+                    <div class="hidden sm:block absolute top-[89%] md:top-[92%]">
+                        <img class="w-[95px] h-[100px]" src="./Assets/roadmapsub.png">
+                        <p class="absolute top-[40%] left-[15%] font-gilroy-bold text-sm text-center text-white font-bold">MetaVerse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Road map section ends here -->
+
+    <!-- Founding team section starts from here -->
+    <section id="foundingteam" class="w-full pt-12 pb-[100px]">
+        <div class="flex justify-center">
+            <div class="md:w-[95%] w-[85%] 2xl:w-[1281.55px] flex flex-col items-center justify-center">
+                <div class="flex justify-center items-center">
+                    <h1 class="font-gilroy-bold text-[24px] lg:text-[38px] text-[30px] text-white font-bold text-center">Meet Our Founding Team</h1>
+                </div>
+                <div class="w-[64.3091334895%] flex items-center md:flex-row flex-col md:justify-between pt-8">
+                    <div class="md:w-[36.4015822554%] w-[75%]">
+                        <img src="./Assets/team 1st.png">
+                    </div>
+                    <div class="md:w-[53%] w-full">
+                        <div class="lg:mt-[32px] mt-2">
+                            <p class="text-center md:text-start font-gilroy-light md:leading-6 md:text-sm  lg:text-base text-white lg:leading-8 font-light">
+                                10+ years of experience in the hospitality/entertainment industry The latest 
+                                venture is currently in Ycombinator’s Winter ‘22 Class BA in Finance, loves to 
+                                stay fit, travel, & live life to the fullest.
+                            </p>
+                        </div>
+                        <div class="flex mt-6 justify-center md:justify-start">
+                            <a href="#">
+                            <img class="lg:w-[34px] lg:h-[35px] w-[24px] h-[25px]" src="./Assets/instagram.svg">
+                            </a>
+                            <a href="#">
+                            <img class="lg:w-[34px] lg:h-[35px] w-[24px] h-[25px] ml-2" src="./Assets/twitter.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[64.3091334895%] flex items-center flex-col md:justify-between md:flex-row-reverse mt-8">
+                    <div class="md:w-[36.4015822554%] w-[75%]">
+                        <img src="./Assets/team second.png">
+                    </div>
+                    <div class="md:w-[53%] w-full">
+                        <div class="lg:mt-[52px] mt-5">
+                            <p class="text-center md:text-start font-gilroy-light md:leading-6 md:text-sm  lg:text-base text-white lg:leading-8 font-light">
+                                Hospitality Tech Founder + Crypto/Web3 Investor Holder of BAYC, MAYC, 
+                                Meebits, & more <br> Avid golfer
+                            </p>
+                        </div>
+                        <div class="flex mt-6 justify-center md:justify-start">
+                            <a href="#">
+                            <img class="lg:w-[34px] lg:h-[35px] w-[24px] h-[25px]" src="./Assets/instagram.svg">
+                            </a>
+                            <a href="#">
+                            <img class="lg:w-[34px] lg:h-[35px] w-[24px] h-[25px] ml-2" src="./Assets/twitter.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[64.3091334895%] flex flex-col items-center md:flex-row md:justify-between pt-8">
+                    <div class="md:w-[36.4015822554%] w-[75%]">
+                        <img src="./Assets/team third.png">
+                    </div>
+                    <div class="md:w-[53%] w-full">
+                        <div class="lg:mt-[52px] mt-5">
+                            <p class="text-center md:text-start font-gilroy-light lg:text-base text-white md:leading-6 md:text-sm lg:leading-8 font-light">
+                                https://www.artstation.com/vaxopipia <br>
+                                https://www.artstation.com/dazdud <br>
+                                https://www.artstation.com/bachibacho
+                            </p>
+                        </div>
+                        <div class="flex mt-6 justify-center md:justify-start">
+                            <a href="#">
+                            <img class="lg:w-[34px] lg:h-[35px] w-[24px] h-[25px]" src="./Assets/instagram.svg">
+                            </a>
+                            <a href="#">
+                            <img class="lg:w-[34px] lg:h-[35px] w-[24px] h-[25px] ml-2" src="./Assets/twitter.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Founding team section ends here -->
+
+    <!-- FAQS sections starts from here -->
+    <section id="faqs" class="w-full pt-[48px] pb-[72px]">
+        <div class="flex justify-center">
+            <div class="md:w-[95%] w-[85%] 2xl:w-[1281.55px] flex flex-col">
+                <div class="flex justify-center items-center">
+                    <h1 class="font-gilroy-bold text-[24px] lg:text-[38px] text-[30px] text-white font-bold text-center">Frequently Asked Questions</h1>
+                </div>
+                <div class="w-full flex md:flex-row flex-col mt-8">
+                    <div class="md:w-[50%]">
+                        <div class="md:w-[95%] h-[40px] rounded-xl bg-[#4526B1] flex justify-start items-center pl-8">
+                            <p class="font-gilroy md:text-md lg:text-lg font-bold text-white">What is the best way to collect NFT?</p>
+                        </div>
+                        <div class="md:w-[95%] px-8 md:px-4 lg:px-10 mt-4">
+                            <p class="font-gilroy md:text-sm lg:text-base text-white font-light">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero 
+                                eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea 
+                                takimata sanctus est
+                            </p>
+                        </div>
+                        <div class="md:w-[95%] h-[40px] rounded-xl bg-[#4526B1] flex justify-start items-center pl-8 mt-4">
+                            <p class="font-gilroy md:text-md lg:text-lg font-bold text-white">Why NFT Trading is so popular?</p>
+                        </div>
+                        <div class="md:w-[95%] h-[40px] rounded-xl bg-[#4526B1] flex justify-start items-center pl-8 mt-4">
+                            <p class="font-gilroy md:text-md lg:text-lg font-bold text-white">How do you trade on Montono easily?</p>
+                        </div>
+                    </div>
+                    <div class="md:w-[50%]">
+                        <div class="md:w-[95%] h-[40px] rounded-xl bg-[#4526B1] flex justify-start items-center pl-8 mt-4 md:mt-0">
+                            <p class="font-gilroy md:text-md lg:text-lg font-bold text-white">What is the best way to collect NFT?</p>
+                        </div>
+                        <div class="md:w-[95%] h-[40px] rounded-xl bg-[#4526B1] flex justify-start items-center pl-8 mt-4">
+                            <p class="font-gilroy md:text-md lg:text-lg font-bold text-white">Why NFT Trading is so popular?</p>
+                        </div>
+                        <div class="md:w-[95%] h-[40px] rounded-xl bg-[#4526B1] flex justify-start items-center pl-8 mt-4">
+                            <p class="font-gilroy md:text-md lg:text-lg font-bold text-white">How do you trade on Montono easily?</p>
+                        </div>
+                        <div class="md:w-[95%] h-[40px] rounded-xl bg-[#4526B1] flex justify-start items-center pl-8 mt-4">
+                            <p class="font-gilroy md:text-md lg:text-lg font-bold text-white">What is the best way to collect NFT?</p>
+                        </div>
+                        <div class="md:w-[95%] h-[40px] rounded-xl bg-[#4526B1] flex justify-start items-center pl-8 mt-4">
+                            <p class="font-gilroy md:text-md lg:text-lg font-bold text-white">How do you trade on Montono easily?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQS sections ends here -->
+
+    <!-- Footer section starts from here -->
+    <section id="footer" class="w-full bg-gradient-to-b from-[#100635] to-[#200B6A] pt-[120px] pb-[50px]">
+        <div class="flex justify-center">
+            <div class="md:w-[95%] w-[85%] 2xl:w-[1281.55px] flex flex-col items-center">
+                <div>
+                    <img src="./Assets/logo.png">
+                </div>
+                <div class="md:w-[58%] w-[80%]">
+                    <p class="font-gilroy-light text-base text-white leading-8 font-light mt-7 text-center">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetu
+                    </p>
+                </div>
+                <div class="flex justify-between mt-4 w-[60%] md:w-[30%]">
+                    <a href="#">
+                        <img class="lg:w-[63px] lg:h-[64px] w-[44px] h-[45px]" src="./Assets/facebook.svg">
+                    </a>
+                    <a href="#">
+                    <img class="lg:w-[63px] lg:h-[64px] w-[44px] h-[45px]" src="./Assets/twitter.svg">
+                    </a>
+                    <a href="#">
+                    <img class="lg:w-[63px] lg:h-[64px] w-[44px] h-[45px]" src="./Assets/youtube.svg">
+                    </a>
+                    <a href="#">
+                    <img class="lg:w-[63px] lg:h-[64px] w-[44px] h-[45px]" src="./Assets/social.svg">
+                    </a>
+                </div>
+                <div class="border-t border-white flex md:flex-row flex-col md:justify-between mt-12 w-[95%]">
+                    <div>
+                        <p class="font-gilroy-light text-base text-white leading-8 font-light md:text-start text-center mt-4 md:mt-0">
+                            Copyright © 2022, 777 Club
+                        </p>
+                    </div>
+                    <div class="flex w-full md:w-[50%] lg:w-[38%]">
+                        <ul class="flex flex-col md:flex-row md:justify-between justify-center items-center w-full">
+                            <li class="font-gilroy-light text-base text-white leading-8 font-light"><a href="#">Terms & Conditions</a></li>
+                            <li class="font-gilroy-light text-base text-white leading-8 font-light"><a href="#">Privacy Policy</a></li>
+                            <li class="font-gilroy-light text-base text-white leading-8 font-light"><a href="#">Cookies Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section ends here -->
+    <script src="./script.js"></script>
+</body>
+</html>
